@@ -5,17 +5,33 @@
 }
 
 .test-header {
-  padding: 60px;
+  padding: 1rem;
   text-align: center;
   background: #efefef;
   color: white;
   font-size: 30px;
 }
+#meat {
+  padding: 1rem;
+}
+
+#corner-div {
+  position: absolute;
+  left:0;
+  top:0;
+  color: #000000;
+  font-size: 1rem;
+}
+
+#body-corner-div {
+  position: absolute;
+  left: 0;
+  top: 1;
+}
 
 #test-div, #sum {
   font-size: 3em;
 }
-
 
 button {
   color: white;

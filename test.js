@@ -20,16 +20,22 @@ function buttonBold() {
 function buttonColor() {
   var color = getRandomColor();
   var rgb = hexToRgb(color);
-  console.log(color + ": " + rgb.r + ", " + rgb.g + ", " + rgb.b)
+  let rgbString = rgb.r + ", " + rgb.g + ", " + rgb.b;
+  console.log(color + ": " + rgbString)
   document.getElementById("test-div").style.color = color;
   document.getElementById("color-button").innerHTML = color;
+  document.getElementById("corner-div").innerHTML = rgbString;
 }
 
 function buttonBackgroundColor() {
   var color = getRandomColor();
+  var rgb = hexToRgb(color);
+  let rgbString = rgb.r + ", " + rgb.g + ", " + rgb.b;
+
   document.body.style.backgroundColor = color;
   setContrast(hexToRgb(color));
   document.getElementById("background-button").innerHTML = color;
+  document.getElementById("body-corner-div").innerHTML = rgbString;
 }
 
 function getRandomColor() {
